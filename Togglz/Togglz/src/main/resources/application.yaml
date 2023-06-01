@@ -1,0 +1,18 @@
+togglz:
+  enabled: true
+  features:
+    DISCOUNT_APPLIED:
+      enabled: true
+  console:
+    enabled: true
+#    path: /togglz-console
+    secured: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'togglz'
+
+server:
+  port: 9090
